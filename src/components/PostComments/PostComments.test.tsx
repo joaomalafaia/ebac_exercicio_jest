@@ -23,6 +23,6 @@ describe('teste para o componente PostComment', () => {
         })
         fireEvent.click(screen.getByTestId('btn-comentar'))
 
-        expect(screen.getByTestId('comentario')).toHaveLength(2)
+        expect(screen.getAllByTestId('comentario')).toHaveLength(2)
     })
 });
